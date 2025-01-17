@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Responsive Porfolio Design</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    </head>
+        <div class="hero-header">
+        
+            <div class="wrapper"> 
+                <header>
+                    <div class="logo">
+                        <i class="fa-solid fa-p"></i>
+                        <div class="logo-text">Paul Richard Baricaua</div>
+                    </div>
+                    <nav>
+                        <div class="togglebtn">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <ul class="navlinks">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Porfolio</a></li>
+                            <li><a href="#">Resume</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </nav>
+                </header>
+                <div class="container">
+                    <div class="hero-pic">
+                        <img src="imgs\Project Pic.jpg" alt="profile pic">
+                    </div>
+                    <div class="hero-text">
+                        <h5>Hi I'm <span class="input">Frontend Developer</span></h5>
+                        <h1>Paul Richard Baricaua</h1>
+                        <p>I’m a beginner frontend developer passionate about creating clean and user-friendly web interfaces. I’m currently a university student, balancing my studies while building my skills in HTML, CSS, and JavaScript. I love learning new technologies and working on small projects to grow my knowledge. My goal is to keep improving and eventually contribute to larger-scale projects that make a real impact.
+                        </p>
+
+                        <div class="btn-group">
+                            <a href="#" class="btn active">Download CV</a>
+                            <a href="#" class="btn">Contact</a>
+                        </div>
+
+                        <div class="social">
+                            <a href="https://www.facebook.com/baricaua.paulrichard" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="https://www.linkedin.com/in/paul-richard-baricaua-011397347/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="https://www.instagram.com/reignzenith/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://x.com/auacirab" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                        </div>
+                        
+                    </div>
+                </div>
+                    
+            </div>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.js"></script>
+        <script>
+            var togglebtn = document.querySelector(".togglebtn");
+            var nav = document.querySelector(".navlinks");
+            var links = document.querySelector(".navlinks li");
+        
+            togglebtn.addEventListener("click", function () {
+                this.classList.toggle("click");
+                nav.classList.toggle("open");
+            });
+        
+            var typed = new Typed(".input", {
+                strings: ["Web Developer", "A Computer Engineering Student", "Frontend Developer", "Web Developer"],
+                typeSpeed: 70, 
+                backSpeed: 55, 
+                loop: true, 
+                backDelay: 1000, 
+                startDelay: 500, 
+                howCursor: true, 
+                cursorChar: "|" ,
+                smartBackspace: true
+            });
+        </script>
+        </script>
+    </body>
+</html>
